@@ -245,5 +245,5 @@ Resources:
                 release: deepsecurity-smartcheck
             EOF
 
-            helm install --wait --values overrides.yaml --set persistence.enabled=false --set service.type=ClusterIP deepsecurity-smartcheck https://github.com/deep-security/smartcheck-helm/archive/master.tar.gz
+            helm install --values overrides.yaml --set persistence.enabled=false --set service.type=ClusterIP deepsecurity-smartcheck https://github.com/deep-security/smartcheck-helm/archive/master.tar.gz
             kubectl apply -f static-service.yaml
