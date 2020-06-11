@@ -36,6 +36,10 @@ Resources:
       SubnetId: !Ref Subnet
       SecurityGroupIds: !Ref SecurityGroups
       Tags:
+      BlockDeviceMappings:
+      - DeviceName: "/dev/sda1"
+        Ebs:
+          VolumeSize: 40
       - Key: "Name"
         Value: !Ref NameTag
       - Key: "Shift"
