@@ -31,7 +31,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       ImageId: ami-f4f4cf91
-      InstanceType: t2.large
+      InstanceType: t2.xlarge
       KeyName: !Ref KeyName
       SubnetId: !Ref Subnet
       SecurityGroupIds: !Ref SecurityGroups
